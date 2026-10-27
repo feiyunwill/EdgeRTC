@@ -94,9 +94,6 @@ static inline void resetCycleCounter() {
 #define configUSE_COUNTING_SEMAPHORES           1
 #define configUSE_PORT_OPTIMISED_TASK_SELECTION 1
 #define configUSE_POSIX_ERRNO                   1
-#if defined(CONFIG_PICOLIBC_TLS) && defined(__THREAD_LOCAL_STORAGE)
-#define configUSE_PICOLIBC_TLS                  1
-#endif
 #define configTHREAD_LOCAL_STORAGE_DELETE_CALLBACKS 1
 #define configNUM_THREAD_LOCAL_STORAGE_POINTERS 2
 #define configTASK_NOTIFICATION_ARRAY_ENTRIES   4

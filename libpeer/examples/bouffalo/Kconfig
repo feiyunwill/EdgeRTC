@@ -1,8 +1,5 @@
 mainmenu "SDK Configuration"
 
-config PICOLIBC_TLS
-    default y if CHIP = "bl618dg" && CPU_ID = "ap" && CPU_MODEL = "b0"
-
 source "$BL_SDK_BASE/Kconfig"
 
 config EDGERTC_PLATFORM_BOUFFALO
