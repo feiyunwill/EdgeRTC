@@ -37,7 +37,7 @@ endif()
 if(CHIP STREQUAL "bl618dg")
     target_sources(app PRIVATE
         ${CMAKE_CURRENT_SOURCE_DIR}/app/bl618dg_stubs.c
-        ${BL_SDK_BASE}/examples/audio/common/multimedia_port_common.c)
+        ${CMAKE_CURRENT_SOURCE_DIR}/app/multimedia_port_bl618dg.c)
     sdk_add_compile_definitions(-DCONFIG_AUDIO_PA_PIN=19)
 endif()
 
